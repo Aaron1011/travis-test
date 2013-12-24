@@ -1,0 +1,9 @@
+language: python
+
+script:
+  - echo "Hello from Travis CI!"
+  - printenv
+
+os:
+  - linux
+  - osx
