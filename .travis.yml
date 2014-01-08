@@ -1,8 +1,19 @@
 language: python
 
+matrix:
+  fast_finish: true
+
+env:
+  - "A_VARIABLE=1"
+  - "A_VARIABLE=2"
+  - "A_VARIABLE=3"
+  - "A_VARIABLE=4"
+
 script:
   - echo "Hello from Travis CI!"
+  - sleep 5
   - printenv
+  - false
 
 os:
   - linux
