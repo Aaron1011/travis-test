@@ -1,0 +1,13 @@
+language: python
+
+matrix:
+  fast_finish: true
+
+script:
+  - echo "Hello from Travis CI!"
+  - "cat ~/build.sh"
+  - sleep 5
+
+os:
+  - linux
+  - osx
