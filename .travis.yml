@@ -6,7 +6,9 @@ matrix:
 script:
   - echo "Hello from Travis CI!"
   - "cat ~/build.sh"
-  - sleep 5
+  - "cat /proc/sys/kernel/perf_event_paranoid"
+  - "echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid"
+  - "cat /proc/sys/kernel/perf_event_paranoid"
 
 os:
   - linux
